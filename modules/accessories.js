@@ -2,12 +2,12 @@ const form = document.querySelector('.add-new');
 const contactSection = document.querySelector('.contact-section');
 const bookSection = document.querySelector('.book-list');
 
-let initialise = () => {
+const initialise = () => {
   form.classList.add('hide');
   contactSection.classList.add('hide');
-}
+};
 
-let navigate = key => {
+const navigate = (key) => {
   switch (key) {
     case 'nav-list':
       bookSection.classList.remove('hide');
@@ -27,6 +27,6 @@ let navigate = key => {
     default:
       break;
   }
-}
+};
 
-export {initialise, navigate};
+export { initialise, navigate };

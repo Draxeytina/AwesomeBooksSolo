@@ -1,16 +1,15 @@
 import Book from './modules/books.js';
-import {initialise, navigate} from './modules/accessories.js'
-import { DateTime } from "./modules/luxon/src/luxon.js";
+import { initialise, navigate } from './modules/accessories.js';
+import { DateTime } from './modules/luxon/src/luxon.js';
 
 const navList = Array.from(document.querySelectorAll('.nav-links')[0].children);
 const homePage = document.getElementById('home');
 const form = document.querySelector('.add-new');
 const bookSection = document.querySelector('.book-list');
 const contactSection = document.querySelector('.contact-section');
-const dateSection = document.querySelector(".date");
+const dateSection = document.querySelector('.date');
 
 window.addEventListener('DOMContentLoaded', () => {
-
   const bookTitle = document.getElementById('title');
   const bookAuthor = document.getElementById('author');
 
@@ -36,7 +35,7 @@ window.addEventListener('DOMContentLoaded', () => {
       for (let i = 0; i < this.library.length; i += 1) {
         const bookContainer = document.createElement('tr');
         const bookInfo = document.createElement('p');
-        bookInfo.setAttribute('class', 'list-content')
+        bookInfo.setAttribute('class', 'list-content');
         const deleteBtn = document.createElement('button');
         deleteBtn.setAttribute('class', 'deletebtn');
         deleteBtn.setAttribute('data', i);
@@ -61,7 +60,7 @@ window.addEventListener('DOMContentLoaded', () => {
       });
     }
   }
-  
+
   const myLibrary = new Library();
 
   myLibrary.createBook();
@@ -79,18 +78,17 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 // initialise timer and set interval
-let siteTime = () => {
+const siteTime = () => {
   dateSection.textContent = DateTime.now().toLocaleString({
-    month: "long",
-    day: "numeric",
-    year: "numeric",
-    hour: "numeric",
-    minute: "2-digit",
+    month: 'long',
+    day: 'numeric',
+    year: 'numeric',
+    hour: 'numeric',
+    minute: '2-digit',
   });
-}
+};
 
 setInterval(siteTime, 1000);
-
 
 // set initial setup for home page
 

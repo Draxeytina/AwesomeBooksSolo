@@ -95,16 +95,21 @@ footer {
   display: none;
 }
 
-#home, #submit, .deletebtn {
+#home,
+#submit,
+.deletebtn {
   cursor: pointer;
 }
 
-#title, #author, #submit {
+#title,
+#author,
+#submit {
   height: 30px;
   padding-left: 20px;
 }
 
-#contact p, h2{
+#contact p,
+h2 {
   display: flex;
   justify-content: center;
 }
