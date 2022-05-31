@@ -1,0 +1,114 @@
+table {
+  width: 100%;
+  margin: 20px auto;
+}
+
+tr {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px auto;
+}
+
+tr:nth-child(odd) {
+  background-color: darkgray;
+}
+
+nav {
+  border: 1px solid #000;
+  padding: 10px;
+}
+
+section {
+  padding: 10px;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  border-right: 1px solid #000;
+  padding-right: 5px;
+}
+
+a.active {
+  color: #add8e6;
+}
+
+h2 {
+  text-align: center;
+}
+
+li {
+  list-style: none;
+  float: left;
+  margin: 10px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.add-new {
+  margin: 10px auto;
+  display: grid;
+  justify-items: legacy;
+  gap: 15px;
+  width: 50%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.date {
+  display: flex;
+  width: 90%;
+  justify-content: flex-end;
+}
+
+.bookSection {
+  display: flex;
+}
+
+.book-list tr {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  width: 80%;
+  height: 40px;
+}
+
+.list-content {
+  margin: 0;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+.hide {
+  display: none;
+}
+
+#home, #submit, .deletebtn {
+  cursor: pointer;
+}
+
+#title, #author, #submit {
+  height: 30px;
+  padding-left: 20px;
+}
+
+#contact p, h2{
+  display: flex;
+  justify-content: center;
+}
+
+#submit {
+  width: 40%;
+}
